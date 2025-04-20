@@ -103,8 +103,8 @@ public class BuilderProcessor extends AbstractProcessor
             }
 
             out.print("public class ");
-            out.print(builderSimpleClassName);
-            out.println(" {");
+            out.println(builderSimpleClassName);
+            out.println("{");
             out.println();
 
             out.print("    private ");
@@ -116,7 +116,8 @@ public class BuilderProcessor extends AbstractProcessor
 
             out.print("    public ");
             out.print(simpleClassName);
-            out.println(" build() {");
+            out.println(" build()");
+            out.println("    {");
             out.println("        return object;");
             out.println("    }");
             out.println();
@@ -130,7 +131,8 @@ public class BuilderProcessor extends AbstractProcessor
                 out.print("(");
 
                 out.print(argumentType);
-                out.println(" value) {");
+                out.println(" value)");
+                out.println("    {");
                 out.print("        object.");
                 out.print(methodName);
                 out.println("(value);");
