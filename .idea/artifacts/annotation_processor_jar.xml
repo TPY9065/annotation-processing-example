@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="annotation-processor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/annotation_processor_jar</output-path>
+    <root id="archive" name="annotation-processor.jar">
+      <element id="module-output" name="annotation-processor" />
+    </root>
+  </artifact>
+</component>
